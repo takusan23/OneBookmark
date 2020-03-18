@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "OneBookmark",
+    "version": "1.0",
+    "description": "ツイート詳細画面からワンクリックでブックマーク追加",
+    "icons": {
+        "48": "icons/OneBookmark_48.png",
+        "128": "icons/OneBookmark_128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "js": [
+                "bookmark.js"
+            ]
+        }
+    ]
+}
